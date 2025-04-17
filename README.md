@@ -6,3 +6,5 @@
 2. Create an IAM user with the required permissions to perform the task.
    
 3. Create ECR repository and push the image ECR using push command showing in the repository.
+
+4. Create a new Task definition for ECS
