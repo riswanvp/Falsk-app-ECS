@@ -15,13 +15,13 @@ pipeline
         
         docker_repo_uri = "774305604464.dkr.ecr.ap-south-1.amazonaws.com/flask-app"
        
-        task_def_arn = "arn:aws:ecs:us-east-1:387232581030:task-definition/TASKDEFINITION-LARAVEL:6"
+        task_def_arn = "arn:aws:ecs:ap-south-1:774305604464:task-definition/TASKDEFINITION-flask:1"
         
         cluster = "JEN-ECS"
         
-        exec_role_arn = "arn:aws:iam::387232581030:role/ecsTaskExecutionRole"
+        exec_role_arn = "arn:aws:iam::774305604464:role/ecsTaskExecutionRole"
         
-        TASK_DEFINITION_NAME = "TASKDEFINITION-LARAVEL"
+        TASK_DEFINITION_NAME = "TASKDEFINITION-flask"
   
         SERVICE_NAME = "JEN-SERVICE"
     }
