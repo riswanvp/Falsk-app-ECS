@@ -1,0 +1,27 @@
+
+## update system package
+sudo apt-get update && sudo apt upgrade -y
+
+## Install Java
+
+sudo apt install openjdk-17-jdk
+
+##verify version
+
+## java -version
+
+##Add Jenkins repository to server
+
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+
+sudo sh -c 'echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+## Install jenkins
+
+sudo apt update
+
+sudo apt install jenkins
+
+sudo systemctl start jenkins
+
+sudo systemctl enable jenkins
